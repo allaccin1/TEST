@@ -1,4 +1,3 @@
-
 /*!
  * name    : dlxQuiz jQuery Plugin
  * author  : Chyno Deluxe
@@ -47,11 +46,11 @@
         quizScore_text: "You answered %totalScore out of %totalQuestions questions correctly",
         quizScoreMessage_text: "",
         quizScoreRank_text: {
-          a: "!Perfect",
-          b: ".You did well",
-          c: "!Not too bad",
-          d: "We believe you are better than getting this result, repeat the test with more focus",
-          f: ".We advise you to spend more time on learning English"
+          a: "!Perfect Score",
+          b: "!Great Job",
+          c: ".At least you passed",
+          d: ".You should have studied more",
+          f: "?Did you even try"
         },
   
 
