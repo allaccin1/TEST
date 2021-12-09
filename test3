@@ -42,15 +42,15 @@
         nextButton_text: "Next Question",
         completeButton_text: "Finish Quiz",
         viewResultsButton_text: "View Results",
-        resultsHeader_text: ".Here's how you did",
+        resultsHeader_text: "لا"
         quizScore_text: "You answered %totalScore out of %totalQuestions questions correctly",
         quizScoreMessage_text: "",
         quizScoreRank_text: {
-          a: "!Perfect Score",
-          b: "!Great Job",
-          c: ".At least you passed",
-          d: ".You should have studied more",
-          f: "?Did you even try"
+          a: "!Perfect, Your mark is A (90-100)",
+          b: ".You did well, Your mark is B (70-79)",
+          c: "!Not too bad, Your mark is C (60-69)",
+          d: "We believe you are better than getting this result, repeat the test with more focus, Your mark is D (40-49)",
+          f: ".We advise you to spend more time on learning English, Your mark is E (0-9)"
         },
   
 
