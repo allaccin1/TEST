@@ -35,7 +35,7 @@
   
 
 
-         /* Text
+        /* Text
          ---------------------------*/
         questionCount_text: "Question %current_index of %totalQuestions",
         backButton_text: "Previous Question",
@@ -53,6 +53,7 @@
           f: "?Did you even try"
         },
   
+
 
           /* Options
            ---------------------------*/
@@ -324,7 +325,7 @@
           _checkAnswers();
 
 
-/* build quiz results
+          /* build quiz results
           ----------------------------*/
           resultsHTML += '<div class="' + class_quizResults + '">';
   
@@ -347,9 +348,7 @@
             resultsHTML += plugin.config.quizScoreRank_text.f;
           }
           resultsHTML += '</h1>';
-
-
-
+  
           //quiz score total
           resultsHTML += '<p class="' + class_quizScore + '">';
           resultsHTML += plugin.config.quizScore_text
