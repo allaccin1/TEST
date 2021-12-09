@@ -46,11 +46,11 @@
         quizScore_text: "You answered %totalScore out of %totalQuestions questions correctly",
         quizScoreMessage_text: "",
         quizScoreRank_text: {
-           a: "!Perfect, Your score is A (90-100)",
-           b: ".You did well, Your score is B (70-79)",
-           c: "!Not too bad, Your score is C (60-69)",
-           d: "We believe you are better than getting this result, repeat the test with more focus, Your score is D (40-49)",
-           f: ".We advise you to spend more time on learning English, Your score is E (0-9)",
+          a: "!Perfect Score",
+          b: "!Great Job",
+          c: ".At least you passed",
+          d: ".You should have studied more",
+          f: "?Did you even try"
         },
   
 
@@ -325,7 +325,6 @@
           _checkAnswers();
 
 
-
           /* build quiz results
           ----------------------------*/
           resultsHTML += '<div class="' + class_quizResults + '">';
@@ -350,8 +349,6 @@
           }
           resultsHTML += '</h1>';
   
-
-
           //quiz score total
           resultsHTML += '<p class="' + class_quizScore + '">';
           resultsHTML += plugin.config.quizScore_text
