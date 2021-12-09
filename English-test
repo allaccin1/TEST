@@ -46,13 +46,9 @@
         quizScore_text: "You answered %totalScore out of %totalQuestions questions correctly",
         quizScoreMessage_text: "",
         quizScoreRank_text: {
-           +A: "!Perfect, Your score is +A (90-100)",
            A: "!Bravo, Your score is A (80-89)",
-           +B: ".You did well, Your score is +B (70-79)",
            B: "!Not too bad, Your score is B (60-69)",
-           +C: ".At least you passed, Your score is +C (50-59)",
            C: "We believe you are better than getting this result, repeat the test with more focus, Your score is C (40-49)",
-           +D: "We advise you to spend more time on practicing English, Your score is +D (30-39)",
            D: ".You need to learn more English grammar, Your score is D (20-29)",
            E: ".You should have studied more, Your score is E (10-19)",
            F: ".We advise you to spend more time on learning English, Your score is F (0-9)",
@@ -338,18 +334,7 @@ resultsHTML += '<h1 class="' + class_quizScoreRank + '">';
 
 if ( totalScore > 90 ) {
 //rank 1: 90-100
-resultsHTML += plugin.config.quizScoreRank_text.+A;
-} 
-
-else if ( totalScore > 80 ) {
-//rank 2: 80-89
 resultsHTML += plugin.config.quizScoreRank_text.A;
-} 
-
-
-else if ( totalScore > 70 ) {
-//rank 3: 70-79
-resultsHTML += plugin.config.quizScoreRank_text.+B;
 } 
 
 else if ( totalScore > 60 ) {
@@ -357,23 +342,11 @@ else if ( totalScore > 60 ) {
 resultsHTML += plugin.config.quizScoreRank_text.B;
 } 
 
-else if ( totalScore > 50 ) {
-//rank 4: 50-59
-resultsHTML += plugin.config.quizScoreRank_text.+C;
-} 
-
 
 else if ( totalScore > 40 ) {
 //rank 4: 40-49
 resultsHTML += plugin.config.quizScoreRank_text.C;
 } 
-
-
-else if ( totalScore > 30 ) {
-//rank 4: 30-39
-resultsHTML += plugin.config.quizScoreRank_text.+D;
-} 
-
 
 else if ( totalScore > 20 ) {
 //rank 4: 20-29
