@@ -35,7 +35,7 @@
   
 
 
-        /* Text
+         /* Text
          ---------------------------*/
         questionCount_text: "Question %current_index of %totalQuestions",
         backButton_text: "Previous Question",
@@ -46,15 +46,13 @@
         quizScore_text: "You answered %totalScore out of %totalQuestions questions correctly",
         quizScoreMessage_text: "",
         quizScoreRank_text: {
-           A: "!Bravo, Your score is A (80-89)",
-           B: "!Not too bad, Your score is B (60-69)",
-           C: "We believe you are better than getting this result, repeat the test with more focus, Your score is C (40-49)",
-           D: ".You need to learn more English grammar, Your score is D (20-29)",
-           E: ".You should have studied more, Your score is E (10-19)",
-           F: ".We advise you to spend more time on learning English, Your score is F (0-9)",
+          a: "!Perfect Score",
+          b: "!Great Job",
+          c: ".At least you passed",
+          d: ".You should have studied more",
+          f: "?Did you even try"
         },
   
-
 
           /* Options
            ---------------------------*/
@@ -326,47 +324,29 @@
           _checkAnswers();
 
 
-          /* build quiz results
+/* build quiz results
           ----------------------------*/
-resultsHTML += '<div class="' + class_quizResults + '">';
-//quiz score rank
-resultsHTML += '<h1 class="' + class_quizScoreRank + '">';
-
-if ( totalScore > 90 ) {
-//rank 1: 90-100
-resultsHTML += plugin.config.quizScoreRank_text.A;
-} 
-
-else if ( totalScore > 60 ) {
-//rank 4: 60-69
-resultsHTML += plugin.config.quizScoreRank_text.B;
-} 
-
-
-else if ( totalScore > 40 ) {
-//rank 4: 40-49
-resultsHTML += plugin.config.quizScoreRank_text.C;
-} 
-
-else if ( totalScore > 20 ) {
-//rank 4: 20-29
-resultsHTML += plugin.config.quizScoreRank_text.D;
-} 
-
-
-else if ( totalScore > 10 ) {
-//rank 4: 10-19
-resultsHTML += plugin.config.quizScoreRank_text.E;
-} 
-
-
-else {
-//rank 5: 0-9
-resultsHTML += plugin.config.quizScoreRank_text.F;
-}
-          resultsHTML += '</h1>';
+          resultsHTML += '<div class="' + class_quizResults + '">';
   
-
+          //quiz score rank
+          resultsHTML += '<h1 class="' + class_quizScoreRank + '">';
+          if ( totalScore > 80 ) {
+            //rank 1: 80-100
+            resultsHTML += plugin.config.quizScoreRank_text.a;
+          } else if ( totalScore > 60 ) {
+            //rank 2: 60-79
+            resultsHTML += plugin.config.quizScoreRank_text.b;
+          } else if ( totalScore > 40 ) {
+            //rank 3: 40-59
+            resultsHTML += plugin.config.quizScoreRank_text.c;
+          } else if ( totalScore > 20 ) {
+            //rank 4: 20-39
+            resultsHTML += plugin.config.quizScoreRank_text.d;
+          } else {
+            //rank 5: 0-19
+            resultsHTML += plugin.config.quizScoreRank_text.f;
+          }
+          resultsHTML += '</h1>';
 
 
 
