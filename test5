@@ -42,7 +42,7 @@
         nextButton_text: "Next Question",
         completeButton_text: "Finish Quiz",
         viewResultsButton_text: "View Results",
-        resultsHeader_text: ".Here's how you did",
+        resultsHeader_text: "[Mark A (80-100), Mark B (60-79), Mark C (40-59), Mark D (20-39), Mark E (0-19)]",
         quizScore_text: "You answered %totalScore out of %totalQuestions questions correctly",
         quizScoreMessage_text: "",
         quizScoreRank_text: {
